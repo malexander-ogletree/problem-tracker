@@ -52,33 +52,73 @@
     --shadow:0 1px 2px rgba(19,26,36,.06),0 4px 14px rgba(19,26,36,.05);
     --shadow-lg:0 8px 40px rgba(19,26,36,.18);
   }
-  [data-theme="dark"]{
-    --bg:#11171F;
-    --surface:#1A222C;
-    --surface-2:#222C38;
-    --ink-900:#E9EEF3;
-    --ink-700:#BFCAD6;
-    --ink-500:#8B98A8;
-    --ink-400:#6C7886;
-    --line:#2B3540;
-    --line-strong:#3B4754;
-    --teal:#2FBDB0;
-    --teal-bright:#37D6C6;
-    --teal-soft:#0E2E2B;
-    --amber:#EBA53C;
-    --amber-soft:#3A2A12;
-    --danger:#F0726A;
-    --danger-soft:#3B1D1D;
-    --blue:#6FACEA;
-    --blue-soft:#16273B;
-    --green:#5FCB8C;
-    --green-soft:#143020;
-    --purple:#B796E2;
-    --purple-soft:#271C39;
-    --inverse-bg:#0A0E13;
+  /* ---- Light themes: each gets its own neutrals, accent, and top bar ---- */
+  [data-theme="paper"]{
+    --bg:#F2EAD9;--surface:#FCF7EC;--surface-2:#F3EBDA;
+    --ink-900:#2C2317;--ink-700:#5A4D3B;--ink-500:#897C68;--ink-400:#AB9D87;
+    --line:#E6DAC4;--line-strong:#D6C7AC;
+    --teal:#B0531F;--teal-bright:#C2632B;--teal-soft:#F6E6D6;--inverse-bg:#2C2317;
+  }
+  [data-theme="forest"]{
+    --bg:#E5F0EA;--surface:#FBFFFD;--surface-2:#EBF4EF;
+    --ink-900:#122019;--ink-700:#344A40;--ink-500:#5F786C;--ink-400:#8AA396;
+    --line:#D2E4DA;--line-strong:#B9D2C5;
+    --teal:#0E8A5C;--teal-bright:#12A06B;--teal-soft:#DCF1E7;--inverse-bg:#0F2A20;
+  }
+  [data-theme="sky"]{
+    --bg:#E8F0F8;--surface:#FFFFFF;--surface-2:#EEF4FA;
+    --ink-900:#0F1C2A;--ink-700:#34465A;--ink-500:#5F7488;--ink-400:#8AA0B4;
+    --line:#D5E3EF;--line-strong:#BAD0E2;
+    --teal:#1668B5;--teal-bright:#1E80D6;--teal-soft:#DBEAF8;--inverse-bg:#112536;
+  }
+  [data-theme="indigo"]{
+    --bg:#ECEAF8;--surface:#FCFBFF;--surface-2:#F1EFFA;
+    --ink-900:#1A1830;--ink-700:#3C3A55;--ink-500:#65627F;--ink-400:#918FA8;
+    --line:#DEDBF0;--line-strong:#C8C4E6;
+    --teal:#5448C8;--teal-bright:#6A5DE0;--teal-soft:#E7E4FB;--inverse-bg:#1E1B38;
+  }
+
+  /* ---- Dark themes: shared status colors, shadows, and inverse text ---- */
+  [data-theme="dark"],[data-theme="carbon"],[data-theme="ocean"],[data-theme="plum"],[data-theme="rose"]{
+    --amber:#EBA53C;--amber-soft:#3A2A12;
+    --danger:#F0726A;--danger-soft:#3B1D1D;
+    --blue:#6FACEA;--blue-soft:#16273B;
+    --green:#5FCB8C;--green-soft:#143020;
+    --purple:#B796E2;--purple-soft:#271C39;
     --inverse-fg:#E9EEF3;
     --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.34);
     --shadow-lg:0 10px 44px rgba(0,0,0,.62);
+  }
+  /* each dark theme: its own neutrals, accent, and top bar */
+  [data-theme="dark"]{
+    --bg:#11171F;--surface:#1A222C;--surface-2:#222C38;
+    --ink-900:#E9EEF3;--ink-700:#BFCAD6;--ink-500:#8B98A8;--ink-400:#6C7886;
+    --line:#2B3540;--line-strong:#3B4754;
+    --teal:#2FBDB0;--teal-bright:#37D6C6;--teal-soft:#0E2E2B;--inverse-bg:#0A0E13;
+  }
+  [data-theme="carbon"]{
+    --bg:#0C0D0F;--surface:#17191D;--surface-2:#202329;
+    --ink-900:#ECEEF1;--ink-700:#C2C6CC;--ink-500:#8B9099;--ink-400:#6A6F77;
+    --line:#282B31;--line-strong:#383C44;
+    --teal:#DB5A98;--teal-bright:#F072AE;--teal-soft:#341020;--inverse-bg:#060708;
+  }
+  [data-theme="ocean"]{
+    --bg:#0A1524;--surface:#122439;--surface-2:#19314C;
+    --ink-900:#DEE9F6;--ink-700:#B0C2D9;--ink-500:#7E92AC;--ink-400:#5E718B;
+    --line:#213A56;--line-strong:#2F4D6E;
+    --teal:#4F9BE8;--teal-bright:#66ADF2;--teal-soft:#102A45;--inverse-bg:#07101D;
+  }
+  [data-theme="plum"]{
+    --bg:#17121D;--surface:#241B2E;--surface-2:#2F2440;
+    --ink-900:#EDE6F3;--ink-700:#C7BAD3;--ink-500:#978AA3;--ink-400:#74687E;
+    --line:#382B46;--line-strong:#4A3A5B;
+    --teal:#BD83EE;--teal-bright:#C99AF5;--teal-soft:#2A1A3C;--inverse-bg:#0F0A14;
+  }
+  [data-theme="rose"]{
+    --bg:#1A1216;--surface:#281A20;--surface-2:#36242C;
+    --ink-900:#F4E6EA;--ink-700:#D6BCC4;--ink-500:#A98D96;--ink-400:#836A72;
+    --line:#3E2A32;--line-strong:#523A43;
+    --teal:#E86A8C;--teal-bright:#F47F9D;--teal-soft:#3A1420;--inverse-bg:#120B0E;
   }
   *{box-sizing:border-box}
   html,body{margin:0;padding:0}
@@ -112,6 +152,16 @@
   .brand h1{font-family:var(--display);font-weight:600;font-size:17px;letter-spacing:-.2px;margin:0}
   .brand .tag{color:#8DA0B4;font-size:11px;font-family:var(--mono);letter-spacing:.5px}
   .topbar-actions{display:flex;gap:9px;align-items:center}
+  .theme-wrap{position:relative}
+  .theme-menu{position:absolute;top:46px;right:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow-lg);padding:8px;width:206px;z-index:70}
+  .theme-menu .grp{font-family:var(--mono);font-size:10px;letter-spacing:.6px;text-transform:uppercase;color:var(--ink-400);padding:7px 8px 4px}
+  .theme-item{display:flex;align-items:center;gap:10px;width:100%;padding:8px;border:none;background:none;border-radius:8px;cursor:pointer;color:var(--ink-900);font-weight:500;font-size:13px;text-align:left}
+  .theme-item:hover{background:var(--surface-2)}
+  .theme-item.active{background:var(--teal-soft);color:var(--teal)}
+  .theme-item .sw{width:24px;height:24px;border-radius:7px;flex:none;display:flex;align-items:center;justify-content:center;border:1px solid rgba(128,128,128,.35)}
+  .theme-item .sw i{width:10px;height:10px;border-radius:50%}
+  .theme-item .chk{margin-left:auto;color:var(--teal);font-weight:700;opacity:0}
+  .theme-item.active .chk{opacity:1}
 
   .btn{
     border:1px solid transparent;border-radius:8px;padding:8px 14px;
@@ -341,7 +391,10 @@
     </span>
   </div>
   <div class="topbar-actions">
-    <button class="btn btn-ghost" id="themeBtn" title="Toggle dark mode" aria-label="Toggle dark mode" style="padding:8px 10px"></button>
+    <div class="theme-wrap">
+      <button class="btn btn-ghost" id="themeBtn" title="Theme" aria-label="Change theme" aria-haspopup="true" style="padding:8px 10px"></button>
+      <div class="theme-menu" id="themeMenu" hidden></div>
+    </div>
     <button class="btn btn-ghost" id="settingsBtn" title="Cherwell settings">
       <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
       Settings
@@ -570,20 +623,43 @@ let state=loadState();
 if(!storageOK){document.getElementById("storageBanner").classList.remove("hidden");}
 
 /* ---------------- Theme ---------------- */
-const SUN_SVG='<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>';
-const MOON_SVG='<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
-function currentTheme(){return document.documentElement.getAttribute("data-theme")==="dark"?"dark":"light";}
+const PALETTE_SVG='<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" stroke="none"/></svg>';
+const THEMES=[
+  {id:"light", label:"Slate",      group:"Light", bg:"#EEF1F5", accent:"#13988C"},
+  {id:"paper", label:"Paper",      group:"Light", bg:"#F2EAD9", accent:"#C2632B"},
+  {id:"forest",label:"Forest",     group:"Light", bg:"#E5F0EA", accent:"#12A06B"},
+  {id:"sky",   label:"Sky",        group:"Light", bg:"#E8F0F8", accent:"#1E80D6"},
+  {id:"indigo",label:"Periwinkle", group:"Light", bg:"#ECEAF8", accent:"#6A5DE0"},
+  {id:"dark",  label:"Midnight",   group:"Dark",  bg:"#11171F", accent:"#37D6C6"},
+  {id:"carbon",label:"Carbon",     group:"Dark",  bg:"#0C0D0F", accent:"#F072AE"},
+  {id:"ocean", label:"Ocean",      group:"Dark",  bg:"#0A1524", accent:"#66ADF2"},
+  {id:"plum",  label:"Plum",       group:"Dark",  bg:"#17121D", accent:"#C99AF5"},
+  {id:"rose",  label:"Rose",       group:"Dark",  bg:"#1A1216", accent:"#F47F9D"}
+];
+function buildThemeMenu(){
+  const menu=document.getElementById("themeMenu");
+  let html="",lastGroup="";
+  THEMES.forEach(t=>{
+    if(t.group!==lastGroup){html+=`<div class="grp">${t.group}</div>`;lastGroup=t.group;}
+    html+=`<button class="theme-item" data-theme="${t.id}">`
+      +`<span class="sw" style="background:${t.bg}"><i style="background:${t.accent}"></i></span>`
+      +`<span>${t.label}</span><span class="chk">✓</span></button>`;
+  });
+  menu.innerHTML=html;
+  menu.querySelectorAll(".theme-item").forEach(b=>b.onclick=()=>{selectTheme(b.dataset.theme);closeThemeMenu();});
+}
 function applyTheme(t){
   document.documentElement.setAttribute("data-theme",t);
-  const btn=document.getElementById("themeBtn");
-  if(btn){btn.innerHTML=(t==="dark")?SUN_SVG:MOON_SVG;btn.title=(t==="dark")?"Switch to light mode":"Switch to dark mode";}
+  document.querySelectorAll("#themeMenu .theme-item").forEach(el=>el.classList.toggle("active",el.dataset.theme===t));
 }
-applyTheme(state.settings.theme||currentTheme());
-document.getElementById("themeBtn").onclick=()=>{
-  const t=currentTheme()==="dark"?"light":"dark";
-  applyTheme(t);
-  state.settings.theme=t;saveState();
-};
+function selectTheme(t){applyTheme(t);state.settings.theme=t;saveState();}
+function openThemeMenu(){buildThemeMenu();applyTheme(document.documentElement.getAttribute("data-theme")||"light");document.getElementById("themeMenu").hidden=false;}
+function closeThemeMenu(){const m=document.getElementById("themeMenu");if(m)m.hidden=true;}
+document.getElementById("themeBtn").innerHTML=PALETTE_SVG;
+applyTheme(state.settings.theme||document.documentElement.getAttribute("data-theme")||"light");
+document.getElementById("themeBtn").onclick=e=>{e.stopPropagation();const m=document.getElementById("themeMenu");if(m.hidden)openThemeMenu();else closeThemeMenu();};
+document.addEventListener("click",e=>{if(!e.target.closest(".theme-wrap"))closeThemeMenu();});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeThemeMenu();});
 
 /* ---------------- Helpers ---------------- */
 const $=id=>document.getElementById(id);
